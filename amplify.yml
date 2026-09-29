@@ -3,15 +3,15 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd ai-resume-screening/frontend
+        - cd AI-Resume-Screening-System/frontend
         - npm ci
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: ai-resume-screening/frontend/dist
+    baseDirectory: AI-Resume-Screening-System/frontend/dist
     files:
       - '**/*'
   cache:
     paths:
-      - ai-resume-screening/frontend/node_modules/**/*
+      - AI-Resume-Screening-System/frontend/node_modules/**/*
