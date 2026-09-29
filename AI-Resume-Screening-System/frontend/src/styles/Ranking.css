@@ -1,0 +1,71 @@
+.ranking-job-select {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.ranking-job-select label {
+  margin: 0;
+}
+
+.ranking-job-select select {
+  max-width: 320px;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ranking-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 200px 60px 120px;
+  align-items: center;
+  gap: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text);
+}
+
+.ranking-position {
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.ranking-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ranking-bar-wrapper {
+  height: 8px;
+  background: var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.ranking-bar {
+  height: 100%;
+  background: var(--color-primary);
+}
+
+.ranking-score {
+  font-weight: 700;
+  font-size: 13px;
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .ranking-row {
+    grid-template-columns: 30px 1fr 60px;
+  }
+  .ranking-bar-wrapper,
+  .status-badge {
+    display: none;
+  }
+}

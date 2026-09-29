@@ -1,0 +1,95 @@
+.filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+
+.filter-chip.active {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.candidate-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.candidate-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.candidate-card-header h3 {
+  font-size: 16px;
+}
+
+.candidate-email {
+  font-size: 13px;
+}
+
+.candidate-card-body p {
+  font-size: 13px;
+  margin: 4px 0;
+  color: var(--color-text);
+}
+
+.candidate-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.score-card {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.score-high {
+  background: #f0fdf4;
+  color: var(--color-success);
+  border: 2px solid var(--color-success);
+}
+.score-medium {
+  background: #fffbeb;
+  color: var(--color-warning);
+  border: 2px solid var(--color-warning);
+}
+.score-low {
+  background: #fef2f2;
+  color: var(--color-danger);
+  border: 2px solid var(--color-danger);
+}

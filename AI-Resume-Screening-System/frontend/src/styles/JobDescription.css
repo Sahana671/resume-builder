@@ -1,0 +1,74 @@
+.jd-page-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.jd-form-panel,
+.jd-list-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.jd-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.jd-form button {
+  margin-top: 20px;
+}
+
+.jd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.jd-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.jd-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jd-item-exp {
+  font-size: 12px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.jd-item-desc {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.jd-item-skills {
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.jd-item-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .jd-page-grid {
+    grid-template-columns: 1fr;
+  }
+}
