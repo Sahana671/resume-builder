@@ -36,7 +36,7 @@ engine = create_engine(
     DATABASE_URL,
     pool_pre_ping=True,
     pool_recycle=3600,
-    connect_args={"charset": "utf8mb4"} if "mysql" in DATABASE_URL else {},
+     connect_args={"charset": "utf8mb4", "connect_timeout": 5} if "mysql" in DATABASE_URL else {},
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
